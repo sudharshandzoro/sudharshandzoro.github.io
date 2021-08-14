@@ -117,23 +117,32 @@ var result = str.substr(0,z);
             break;
 	  case 27:
 	    var dork = "site:sharecode.io " + result;
-	  case 28:
+	    break;
+          case 28:
 	    var dork = "site:pastebin.com " + result;
-	  case 29:
+	   break;
+           case 29:
 	    var dork = "site:repl.it " + result;
-	  case 30:
+	    break;
+            case 30:
 	    var dork = "site:codeshare.com " + result;
-	  case 31:
+	     break;
+         case 31:
 	    var dork = "site:productforums.google.com " + result;
-	  case 32:
+	    break;  
+          case 32:
 	    var dork = "site:gitter.im " + result;
-	  case 33:
+	    break;
+          case 33:
 	    var dork = "site:bitbucket.org " + result;
-	  case 34:
+	     break;
+            case 34:
 	    var dork = "inurl:gitlab " + result;
-	  case 35:
+	  break;
+            case 35:
 	    var dor = "inurl:/database* ext:sql intext:index of -site:" + domain;
-          default:
+         break;
+         default:
             
         }
         var domain = document.getElementById("target").value;
@@ -141,5 +150,7 @@ var result = str.substr(0,z);
          var  url ='http://www.google.com/search?q='  + dork;
           window.open(url,'_blank');
           
-      }
+      } 
+
+
           
