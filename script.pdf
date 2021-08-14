@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudharshan the dorks</title>
+</head>
+<body>
+    
+     <h1>zoro the dorks</h1>                                          <!-- heading  -->
+    <label>target:</label>
+    <input type="text" id="target" placeholder="example.com">
+   
+    <script src="script.js"></script>
+    
+    <p onclick="search(1)">Directory listing vulnerabilities</p>
+    <p onclick="search(2)">Admin</p>
+    
+    
+    
+    <p onclick="search(3)">config files</p>
+    <p onclick="search(4)">documents</p>
+    
+
+
+    <!-- file types-->
+    <p onclick="search(5)">php</p>
+    <p onclick="search(6)">jsp</p>
+    <p onclick="search(7)">asp</p>
+    <p onclick="search(35)">sql<p>
+
+    <!-- aws buckets-->
+    <p onclick="search(8)">aws</p>
+    <p onclick="search(9)">aws2</p>
+
+<!-- atlassian -->
+    <p onclick="search(10)">confluence login</p>
+    <p onclick="search(11)">wiki</p>
+    <p onclick="search(12)">dashboard</p>
+    <p onclick="search(13)">atlassian</p>
+    <p onclick="search(5)">bitbucket.org</p>
+    <p onclick="search(5)">gitlab</p>
+
+
+<!-- information disclousre-->
+    <p onclick="search(5)">codepan.co</p>
+    <p onclick="search(5)">scribd.com</p>
+    <p onclick="search(5)">npmjs.com</p>
+    <p onclick="search(5)">npm.runkit.com</p>
+    <p onclick="search(5)">libraries.io</p>
+    <p onclick="search(5)">ycombinator.com</p>
+    <p onclick="search(5)">coggle.com</p>
+    <p onclick="search(5)">papaly.com</p>
+    <p onclick="search(5)">trello.com</p>
+    <p onclick="search(5)">prezi.com</p>
+    <p onclick="search(5)">jsdelivr.net</p>
+    <p onclick="search(5)">codepen.io</p>
+    <p onclick="search(5)">codeshare.io</p>
+    <p onclick="search(5)">sharecode.io</p>
+    <p onclick="search(5)">pastebin.com</p>
+    <p onclick="search(5)">repl.it</p>
+    <p onclick="search(5)">codeshare.com</p>
+    <p onclick="search(5)">productforums.google.com</p>
+    <p onclick="search(5)">gitter.im</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
