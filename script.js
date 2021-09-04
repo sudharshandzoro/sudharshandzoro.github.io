@@ -142,8 +142,9 @@ var result = str.substr(0,z);
             case 35:
 	    var dor = "inurl:/database* ext:sql intext:index of -site:" + domain;
          break;
-	 case 36:
-		 var dork = "site:" + domain + " +inurl:redir+|+inurl:url+|+inurl:redirect+|+inurl:return+|+inurl:src=http+|+inurl:r=http" 
+	    case 36:
+            var dork = "site:" + domain + " +inurl:redir+|+inurl:url+|+inurl:redirect+|+inurl:return+|+inurl:src=http+|+inurl:r=http" ;
+		 break;
          default:
             
         }
