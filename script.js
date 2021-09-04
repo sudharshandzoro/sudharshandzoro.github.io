@@ -64,10 +64,9 @@ var result = str.substr(0,z);
             var dork = "inurl:s3.amazonaws.com " + "inurl:" + domain;
             break;
           case 10:
-	    var dork = "inurl:" + domian +" allinurl:/confluence/login.action"
+	    var dork = "inurl:" + domian + " allinurl:/confluence/login.action";
 	    break;
-            
- 	  case 11:
+          case 11:
 	    var dork = "inurl:wiki." + result +".com/confluence";
             break;
 	  case 12:
@@ -140,7 +139,7 @@ var result = str.substr(0,z);
 	    var dork = "inurl:gitlab " + result;
 	  break;
             case 35:
-	    var dor = "inurl:/database* ext:sql intext:index of -site:" + domain;
+	    var dork = "inurl:/database* ext:sql intext:index of -site:" + domain;
          break;
 	    case 36:
             var dork = "site:" + domain + " +inurl:redir+|+inurl:url+|+inurl:redirect+|+inurl:return+|+inurl:src=http+|+inurl:r=http" ;
