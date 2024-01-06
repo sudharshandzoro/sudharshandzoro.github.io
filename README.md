@@ -2,4 +2,4 @@
 
 permalink: /index.html
 Zoro google dork
-<a href="https://sudharshan-deku.github.io/index.html">main</a>
+<a href="https://sudharshan-deku.github.io/index.html">index</a>
