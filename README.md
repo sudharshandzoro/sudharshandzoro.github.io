@@ -1,4 +1,4 @@
-# sudharshan-deku.github.io
+# sudharshandzoro.github.io
 
 permalink: /index.html
 
