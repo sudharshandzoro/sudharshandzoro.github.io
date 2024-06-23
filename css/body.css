@@ -48,14 +48,14 @@ li {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    margin-right: 60px;
+    margin-left: 50px;
 }
 
 .profile-image {
-    width: 100px;
+    width: 1000px;
     height: 1000px;
     border-radius: 40%;
-    margin-right: 40px;
+    margin-right: 10px;
 }
 
 
