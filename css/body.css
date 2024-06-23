@@ -45,17 +45,17 @@ li {
 }
 
 .portfolio-pic {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 60px;
 }
 
 .profile-image {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+    width: 100px;
+    height: 1000px;
+    border-radius: 40%;
+    margin-right: 40px;
 }
 
 
