@@ -132,3 +132,20 @@ li {
 .video-bg {
     z-index: -100;
 }
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+#portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#portfolio .project {
+    flex: 0 1 30%;
+    border:
