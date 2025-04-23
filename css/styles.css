@@ -62,53 +62,39 @@ body {
 
 .project-section {
   padding: 4rem 2rem;
-  background-color: #111;
-  color: #eee;
+  background-color: #001f3f; /* You can match this to your site’s exact blue */
+  color: #fff;
   text-align: center;
 }
 
 .project-section h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #00ff88;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  color: #00d4ff; /* Cyan-accented heading */
 }
 
 .project-card {
-  background-color: #222;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.project-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.project-info {
-  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
 }
 
 .project-info a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #00ff88;
+  color: #00d4ff;
   text-decoration: none;
-}                                                                       
+}
+                                                                   
 
+/* inside the project in detail styling */
 
 .project-detail {
   padding: 4rem 2rem;
