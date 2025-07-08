@@ -13,3 +13,14 @@ $(document).ready(function () {
     });
   });
 });
+
+
+
+//modal closes when the clicking home
+$(document).on('click', '#ccarm-home-btn', function(e) {
+    // No need for e.preventDefault(), since it's a button
+    $('#projectModal').on('hidden.bs.modal', function () {
+        window.location.href = "https://sudharshandzoro.github.io/#projects";
+        $(this).off('hidden.bs.modal'); // clean up to avoid stacking events
+    });
+});
