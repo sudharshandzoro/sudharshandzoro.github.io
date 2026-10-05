@@ -1,214 +1,218 @@
-<style>
-.ccarm-container {
-  width: 100%;
-  max-width: 100vw;
-  background: #011e38;           /* Dark blue background */
-  border-radius: 0 0 18px 18px;
-  box-shadow: none;
-  padding: 44px 60px 28px 60px;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  color: #fff;                   /* White text by default */
-  margin: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A detailed case study of Sudharshan Ramalingam's composite vehicle suspension control-arm analysis.">
+    <title>Composite Control Arm Analysis | Sudharshan Ramalingam</title>
+    <link rel="stylesheet" href="../css/project-detail.css">
+</head>
+<body>
+    <nav class="case-nav" aria-label="Project navigation">
+        <a class="case-brand" href="../index.html">Sudharshan Ramalingam</a>
+        <div class="case-nav-links">
+            <a href="../index.html#projects">Back to Projects</a>
+            <a class="nav-report" href="../files/composite_project.pdf" target="_blank" rel="noopener">Full Report</a>
+        </div>
+    </nav>
 
-@media (max-width: 1199px) {
-  .ccarm-container {
-    padding: 22px 8px;
-  }
-}
+    <main>
+        <header class="case-header">
+            <div class="case-header-inner">
+                <p class="eyebrow">Composite Materials Research | September-December 2023</p>
+                <h1>Composite Control Arm for Vehicle Suspension</h1>
+                <p class="lede">An analytical study of replacing a conventional metal suspension control arm with an S-2 glass-fibre and epoxy laminate designed for strength, stiffness, manufacturability, and lower weight.</p>
+                <dl class="project-facts">
+                    <div>
+                        <dt>Reinforcement</dt>
+                        <dd>AGY S-2 glass fibre</dd>
+                    </div>
+                    <div>
+                        <dt>Matrix</dt>
+                        <dd>CYCOM 890 RTM epoxy</dd>
+                    </div>
+                    <div>
+                        <dt>Laminate</dt>
+                        <dd>[0<sub>3</sub>/90<sub>4</sub>]<sub>S</sub> cross-ply</dd>
+                    </div>
+                    <div>
+                        <dt>Manufacturing</dt>
+                        <dd>Overbraiding concept</dd>
+                    </div>
+                </dl>
+            </div>
+        </header>
 
-.ccarm-title {
-  color: #a3c6d5;                /* Light blue title */
-  font-size: 2.2rem;
-  margin-top: 0;
-  margin-bottom: 18px;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: -1px;
-}
+        <figure class="lead-figure">
+            <img src="../assets/img/projects/composite-control-arm/control-arm-cad.jpg" alt="CAD model of the proposed suspension control arm">
+            <figcaption>Control-arm geometry used to define the analytical load cases and laminate response.</figcaption>
+        </figure>
 
-.ccarm-download-link {
-  color: #a3c6d5;
-  text-decoration: none;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-  text-align: center;
-  width: 100%;
-  background: #011e38;
-  border-radius: 6px;
-  padding: 12px 0 12px 0;
-  font-size: 1.13rem;
-  transition: background 0.15s, color 0.15s;
-  box-shadow: 0 2px 12px #0002;
-  border: none;
-  gap: 6px;
-}
-.ccarm-download-link:hover { 
-  background: #a3c6d5; 
-  color: #011e38;
-}
+        <section class="case-section intro-section">
+            <div class="section-heading">
+                <p class="section-index">01</p>
+                <h2>Engineering Objective</h2>
+            </div>
+            <div class="section-content two-column-copy">
+                <p>The control arm links the steering knuckle or wheel hub to the vehicle chassis. It must carry turning, acceleration, and vertical loads while maintaining wheel alignment and allowing suspension movement.</p>
+                <p>The project evaluated whether glass-fibre reinforced epoxy could replace steel or aluminum while improving corrosion resistance and weight efficiency. The concept also had to remain practical for a small production run of 10 to 100 parts.</p>
+            </div>
+        </section>
 
+        <section class="case-section method-section">
+            <div class="section-heading">
+                <p class="section-index">02</p>
+                <h2>Geometry and Load Cases</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-intro">The control arm was approximated as connected plate regions between two chassis bushings and the wheel-side ball joint. Three vehicle conditions established the design loads.</p>
+                <div class="media-grid balanced-media">
+                    <figure>
+                        <div class="media-frame chart-media">
+                            <img src="../assets/img/projects/composite-control-arm/control-arm-dimensions.png" alt="Dimensioned drawing of the triangular control arm geometry">
+                        </div>
+                        <figcaption>Dimensioned control-arm geometry, including the two bushing locations and ball-joint connection.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="media-frame chart-media">
+                            <img src="../assets/img/projects/composite-control-arm/acceleration-load-case.jpg" alt="CAD model showing the acceleration load applied to the control arm">
+                        </div>
+                        <figcaption>Acceleration load case applied along the control-arm plane.</figcaption>
+                    </figure>
+                </div>
+                <div class="process-list">
+                    <div><span>1</span><p><strong>Turning:</strong> a 10 km/h turn on a 15 m radius produced a calculated centripetal load of 665 N.</p></div>
+                    <div><span>2</span><p><strong>Acceleration:</strong> accelerating from 0 to 50 km/h in 5 seconds produced an in-plane load of 3608 N.</p></div>
+                    <div><span>3</span><p><strong>Vertical loading:</strong> the front-axle load produced 3188.25 N at one wheel and a calculated bending moment of 1291 Nm.</p></div>
+                </div>
+            </div>
+        </section>
 
-.ccarm-hero-img {
-  display: block;
-  width: 100%;
-  max-width: 420px;
-  margin: 24px auto 28px auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 24px #a3c6d5aa;
-  background: #e6ecf3;
-}
+        <section class="results-band" aria-labelledby="composite-results-title">
+            <div class="results-inner">
+                <div class="section-heading light-heading">
+                    <p class="section-index">03</p>
+                    <h2 id="composite-results-title">Design Inputs and Results</h2>
+                </div>
+                <div class="result-grid">
+                    <article>
+                        <strong>65%</strong>
+                        <p>Selected fibre volume fraction after comparing 50% and 65% material cases.</p>
+                    </article>
+                    <article>
+                        <strong>14 plies</strong>
+                        <p>Cross-ply laminate using 0.25 mm plies for a 3.5 mm laminate thickness.</p>
+                    </article>
+                    <article>
+                        <strong>1291 Nm</strong>
+                        <p>Calculated bending moment from the vertical wheel load.</p>
+                    </article>
+                    <article>
+                        <strong>0.346 mm</strong>
+                        <p>Calculated cantilever-style deflection for the bending case.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.ccarm-section-title {
-  color: #a3c6d5;                /* Light blue headings */
-  margin-top: 36px;
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 700;
-  border-bottom: 2px solid #a3c6d5;
-  padding-bottom: 6px;
-  margin-bottom: 18px;
-}
+        <section class="case-section evidence-section">
+            <div class="section-heading">
+                <p class="section-index">04</p>
+                <h2>Material and Manufacturing Choice</h2>
+            </div>
+            <div class="section-content media-grid">
+                <figure>
+                    <div class="media-frame chart-media">
+                        <img src="../assets/img/projects/composite-control-arm/material-inputs.jpg" alt="Spreadsheet inputs for glass fibre, epoxy resin, and fibre volume fraction">
+                    </div>
+                    <figcaption>Material inputs used to calculate the composite properties at a 65% fibre volume fraction.</figcaption>
+                </figure>
+                <div>
+                    <p><strong>AGY S-2 glass fibre</strong> was selected for its strength, availability, and comparatively accessible cost. <strong>CYCOM 890 RTM epoxy</strong> provided the matrix with moisture resistance and suitable mechanical properties.</p>
+                    <p>Overbraiding was proposed for production because it can follow the control arm's curved geometry while supporting lower-volume manufacturing. The concept targeted an initial run of 10 test parts and a possible production quantity of up to 100.</p>
+                    <p>The 65% fibre volume case produced stronger calculated stiffness properties than the 50% case and was carried into the laminate analysis.</p>
+                </div>
+            </div>
+        </section>
 
-.ccarm-list {
-  padding-left: 22px;
-  margin: 0 0 1.2rem 0;
-}
-.ccarm-list li {
-  margin-bottom: 7px;
-  line-height: 1.55;
-  color: #fff;                   /* White for list text */
-}
+        <section class="case-section analysis-section">
+            <div class="section-heading">
+                <p class="section-index">05</p>
+                <h2>Laminate Selection</h2>
+            </div>
+            <div class="section-content">
+                <p class="section-intro">Two stacking approaches were evaluated. The [0<sub>3</sub>/90<sub>4</sub>]<sub>S</sub> cross-ply sequence produced the preferred stiffness response and was simpler to manufacture than the angled-ply alternative.</p>
+                <div class="media-grid balanced-media">
+                    <figure>
+                        <div class="media-frame chart-media">
+                            <img src="../assets/img/projects/composite-control-arm/material-stiffness.jpg" alt="Calculated on-axis stiffness properties for the selected composite material">
+                        </div>
+                        <figcaption>Calculated single-layer on-axis stiffness terms for the selected material system.</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="media-frame chart-media">
+                            <img src="../assets/img/projects/composite-control-arm/material-compliance.jpg" alt="Calculated compliance terms for the selected composite material">
+                        </div>
+                        <figcaption>Calculated compliance terms used in the laminate strain analysis.</figcaption>
+                    </figure>
+                </div>
+                <div class="findings-copy">
+                    <p>The cross-ply sequence aligned the fibres with the primary control-arm directions. The analyzed in-plane load cases produced zero calculated shear strain, while the 0-degree outer plies improved bending stiffness.</p>
+                    <p>For the higher acceleration load, the report calculated a larger longitudinal deformation than for the turning case. This reinforced the need to balance axial stiffness with the part's overall thickness and geometry.</p>
+                </div>
+            </div>
+        </section>
 
-.ccarm-tags {
-  margin-top: 24px;
-  margin-bottom: 12px;
-  text-align: center;
-}
-.ccarm-tag {
-  display: inline-block;
-  background: #a3c6d5;
-  color: #011e38;
-  border-radius: 12px;
-  padding: 5px 13px;
-  font-size: 0.98em;
-  margin: 3px 6px 3px 0;
-  font-weight: 500;
-  letter-spacing: 0.05em;
-  border: 1px solid #a3c6d5;
-  transition: background 0.2s, color 0.2s;
-}
-.ccarm-tag:hover {
-  background: #fff;
-  color: #011e38;
-  border-color: #fff;
-}
-.ccarm-centered-link {
-  text-align: center;
-  margin-top: 20px;
-}
+        <section class="microstructure-band">
+            <div class="microstructure-inner">
+                <div class="section-heading light-heading">
+                    <p class="section-index">06</p>
+                    <h2>Bending Configuration</h2>
+                </div>
+                <p class="microstructure-intro">The bending model added a core region between cross-ply skins, producing a 22-ply, 5.5 mm-thick analytical laminate for the vertical-load case.</p>
+                <div class="micro-grid">
+                    <figure>
+                        <img src="../assets/img/projects/composite-control-arm/bending-laminate.jpg" alt="Layered laminate cross-section with a bending moment arrow">
+                        <figcaption>Layered skin-and-core representation used for the bending calculation.</figcaption>
+                    </figure>
+                    <div class="micro-notes">
+                        <p>The calculated bending stiffness matrix favored the [0<sub>3</sub>/90<sub>4</sub>]<sub>S</sub> arrangement over the angled-ply sequence evaluated in the study.</p>
+                        <p>The analytical model predicted a 0.346 mm deflection under the assumed 3188.25 N wheel load.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.ccarm-container p {
-  text-align: center;
-  font-size: 1.13rem;
-  margin: 0 0 1rem 0;
-  color: #fff;                   /* White for paragraph text */
-}
+        <section class="case-section conclusion-section">
+            <div class="section-heading">
+                <p class="section-index">07</p>
+                <h2>Engineering Conclusion</h2>
+            </div>
+            <div class="section-content conclusion-grid">
+                <p>The study established a feasible analytical direction for a composite suspension control arm using S-2 glass fibre, epoxy resin, and a manufacturable cross-ply laminate. The selected concept balanced stiffness, corrosion resistance, and production practicality.</p>
+                <ul>
+                    <li>The 65% fibre volume case produced the preferred calculated properties.</li>
+                    <li>The cross-ply sequence simplified manufacturing and eliminated calculated in-plane shear strain.</li>
+                    <li>Acceleration generated the larger in-plane stress case.</li>
+                    <li>A skin-and-core configuration improved the bending response.</li>
+                    <li>Physical prototyping and validation testing would be the next engineering step.</li>
+                </ul>
+            </div>
+        </section>
 
-@media (max-width: 700px) {
-  .ccarm-container {
-    padding: 10px;
-    max-width: 99vw;
-  }
-  .ccarm-hero-img {
-    max-width: 95vw;
-  }
-  .ccarm-section-title {
-    font-size: 1.3rem;
-  }
-}
-</style>
-</style>
+        <section class="report-band">
+            <div>
+                <p class="eyebrow">Full Technical Documentation</p>
+                <h2>Read the composite-control-arm report</h2>
+                <p>The report contains the complete geometry assumptions, material inputs, load calculations, laminate matrices, strain calculations, bending analysis, and references.</p>
+            </div>
+            <a href="../files/composite_project.pdf" target="_blank" rel="noopener">Open Full Report</a>
+        </section>
+    </main>
 
-<div class="ccarm-container">
-  <h1 class="ccarm-title">Composite Control Arm for Vehicles</h1>
-
-  <a href="../files/composite_project.pdf" target="_blank" class="ccarm-download-link">
-    Download Project Report (PDF)
-  </a>
-
-  <!-- Replace with your actual image URL -->
-  <img src="YOUR_IMAGE_URL_HERE" alt="Composite Control Arm" class="ccarm-hero-img" />
-
-  <section>
-    <h2 class="ccarm-section-title">Project Overview</h2>
-    <p>
-      This project explores the design, analysis, and manufacturing feasibility of a <b>composite control arm</b> for vehicle suspension systems, replacing traditional steel or aluminum arms with a lighter, rust-resistant, and high-performance alternative. The composite design leverages <b>epoxy resin</b> and <b>glass fiber</b> to achieve significant weight reduction, enhanced durability, and improved mechanical properties.
-    </p>
-  </section>
-
-  <section>
-    <h3 class="ccarm-section-title">Objectives</h3>
-    <ul class="ccarm-list">
-      <li>Design a composite control arm with optimal strength, stiffness, and weight.</li>
-      <li>Analyze mechanical behavior under real-world loading (turning, acceleration, bending).</li>
-      <li>Evaluate manufacturing processes for efficiency and cost-effectiveness.</li>
-      <li>Compare performance vs. conventional steel/aluminum arms.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3 class="ccarm-section-title">Engineering Approach</h3>
-    <ul class="ccarm-list">
-      <li><b>Load Analysis</b>: Studied control arm under turning, acceleration, and bending using F = ma and structural formulas.</li>
-      <li><b>Material Selection</b>: Chose S-2 Glass Fiber (density 2.46g/cc) & Epoxy Resin for high strength and durability.</li>
-      <li><b>Lamination Sequence</b>: Tested [03/904]S stack (plies at 0°/90°) for isotropic strength and easy manufacturability.</li>
-      <li><b>Calculations</b>: Performed stress, strain, and bending calculations for different loading scenarios; compared elongation and shear.</li>
-      <li><b>Production Method</b>: Selected overbraiding for prototyping (targeting 65% fiber volume fraction for best mechanical results).</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3 class="ccarm-section-title">Key Results</h3>
-    <ul class="ccarm-list">
-      <li>Lighter control arm with high stiffness and rust resistance.</li>
-      <li>Stress under turn: <b>-0.44 MPa</b> (inward centripetal force)</li>
-      <li>Stress under acceleration: <b>-0.59 MPa</b> (forward force)</li>
-      <li>Bending moment: <b>1291 Nm</b>; significant improvement over metal design.</li>
-      <li>Best performance with [03/904]S stacking at 65% fiber volume fraction.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h3 class="ccarm-section-title">Conclusion</h3>
-    <p>
-      The composite control arm achieves comparable or better performance than traditional arms, offering superior weight savings, manufacturability, and resistance to corrosion. <b>Future work</b> may involve full-scale testing, lifecycle analysis, and potential application to broader vehicle components.
-    </p>
-  </section>
-
-  <section>
-    <div class="ccarm-tags">
-      <span class="ccarm-tag">Composites</span>
-      <span class="ccarm-tag">Mechanical Engineering</span>
-      <span class="ccarm-tag">Automotive</span>
-      <span class="ccarm-tag">Structural Analysis</span>
-      <span class="ccarm-tag">Group Project</span>
-    </div>
-    <br>
-  </section>
-
-  <div class="ccarm-centered-link">
-  <button 
-    type="button" 
-    class="ccarm-tag" 
-    data-dismiss="modal" 
-    id="ccarm-home-btn"
-    style="cursor:pointer;">
-    Home
-  </button>
-</div>
-
-
+    <footer class="case-footer">
+        <p>Sudharshan Ramalingam | Mechanical Engineering Portfolio</p>
+        <a href="../index.html#projects">Return to Projects</a>
+    </footer>
+</body>
+</html>
